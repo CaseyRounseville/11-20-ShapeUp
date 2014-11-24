@@ -21,6 +21,10 @@ public class Line
   }
   public double slope()
   {
+    if(start.x==end.x)
+    {
+      return 0.0;
+    }
     return (start.y-end.y)/(start.x-end.x);
   }
   public String toString()
